@@ -1,5 +1,7 @@
 # React Code Editor
 
+![](README_IMG.png)
+
 This project was built with [free dev code camp tutorial](https://www.freecodecamp.org/news/how-to-build-react-based-code-editor/).
 
 ## Roadmap
