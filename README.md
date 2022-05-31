@@ -22,6 +22,10 @@ Suggestions from original project
 - [ ] Bookmark favourite code snippets
 - [ ] Custom dashboard of your code snippets (that are saved) - just like CodePen.
 
+Additional
+
+- [ ] Deploy on Vercel 
+
 ## Deployment on GH pages
 
 [Deployment](https://vladislavs-poznaks.github.io/react-code-editor/)
