@@ -19,7 +19,7 @@ export const languages: ILanguage[] = [
         value: "c++",
     },
     {
-        id: 60,3
+        id: 60,
         name: "Go (1.13.5)",
         label: "Go (1.13.5)",
         value: "go",
