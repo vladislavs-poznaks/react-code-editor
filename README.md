@@ -4,11 +4,12 @@ This project was built with [free dev code camp tutorial](https://www.freecodeca
 
 ## Roadmap
 
-- [ ] Extract API call to hooks (maybe)
+- [ ] Extract API calls to hooks (maybe)
 - [ ] Add global state management
 - [ ] Add default code for each language
 - [ ] Better compilation error handling (for example PHP)
 - [ ] Hint for keyboard shortcut for compilation (Ctrl + Enter)
+- [ ] Add tests
 
 ## Deployment on GH pages
 
