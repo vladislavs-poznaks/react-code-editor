@@ -1,14 +1,17 @@
 import React, {useState} from "react";
 import Editor from "@monaco-editor/react";
+import useStore from "../stores/Store";
 
 interface IProps {
     onChange: (action: string, data: string) => void,
     language: string,
-    code: string | undefined,
+    // code: string,
     theme: string
 }
 
-const CodeEditor = ({ onChange, language, code, theme}: IProps) => {
+const CodeEditor = ({ onChange, language, theme}: IProps) => {
+    const code = useStore(state => state.code)
+
     const [value, setValue] = useState<string | undefined>(code || '')
 
     const handleChange = (value: string | undefined) => {

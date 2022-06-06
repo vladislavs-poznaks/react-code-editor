@@ -21,3 +21,8 @@ export interface IOutputDetails {
     stdout: string;
     stderr: string;
 }
+
+export type IStore = {
+    code: string;
+    setCode: (code: string) => void;
+}

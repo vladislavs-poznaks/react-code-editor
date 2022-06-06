@@ -17,11 +17,13 @@ import {IOutputDetails, ITheme} from "./constants/interfaces";
 import InputWindow from "./components/InputWindow";
 import OutputWindow from "./components/OutputWindow";
 import useKeyPress from "./hooks/keyPress";
+import useStore from "./stores/Store";
 
 const defaultCode = '// some comment'
 
 const App = () => {
-    const [code, setCode] = useState<string>(defaultCode)
+    const code = useStore(state => state.code)
+    const setCode = useStore(state => state.setCode)
 
     const [input, setInput] = useState<string>('')
 
@@ -206,7 +208,7 @@ const App = () => {
             <div className="flex flex-row space-x-4 items-start px-4 py-4">
                 <div className="flex flex-col w-full h-full justify-start items-end">
                     <CodeEditor
-                        code={code}
+                        // code={code}
                         onChange={onChange}
                         language={language.value}
                         theme={theme.value}
